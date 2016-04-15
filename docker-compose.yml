@@ -1,0 +1,16 @@
+version: "2"
+services:
+  zk:
+    image: "micahhausler/docker-zk-exhibitor"
+    networks:
+      - zookeeper
+    ports:
+      - 2181
+      - 2888
+      - 3888
+      - 8080
+      - 8181
+    volumes:
+      - "./data/:/opt/zookeeper/local_configs/"
+networks:
+  zookeeper:
