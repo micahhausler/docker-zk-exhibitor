@@ -63,7 +63,7 @@ Starting the container:
         -e AWS_ACCESS_KEY_ID=<access_key> \
         -e AWS_SECRET_ACCESS_KEY=<secret_key> \
         -e HOSTNAME=<host> \
-        mbabineau/zookeeper-exhibitor:latest
+        micahhausler/docker-zk-exhibitor:latest
 
 Once the container is up, confirm Exhibitor is running:
 
@@ -123,7 +123,7 @@ docker run -p 8181:8181 -p 2181:2181 -p 2888:2888 -p 3888:3888 \
     -e S3_BUCKET=<bucket> \
     -e S3_PREFIX=<key_prefix> \
     -e HOSTNAME=<host> \
-    mbabineau/zookeeper-exhibitor:latest
+    micahhausler/docker-zk-exhibitor:latest
 ```
 
 ## License
